@@ -1,13 +1,13 @@
 -#  This file is app/views/movies/index.html.haml
 %h2 All Movies
 
-%table#movies.table.table-striped.col-md-12 <br/>
+%table#movies<br/>
   %thead<br/>
     %tr<br/>
       %th{:id => 'title_header'}= sortable "title", "Movie Title"<br/>
-      %th Rating
-      %th Release Date
-      %th More Info
+      %th Rating<br/>
+      %th Release Date<br/>
+      %th More Info<br/>
   %tbody
     - @movies.each do |movie|
       %tr
