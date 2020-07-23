@@ -3,7 +3,7 @@
   Include:
   - ['G', 'PG', 'PG-13', 'R', 'NC-17'].each do |rating|
     = rating
-    = check_box_tag "ratings[#{rating}]", 1, params[:ratings].include?("#{rating}")
+    = check_box_tag "ratings[#{rating}]", 1, @selected.include?("#{rating}")
   = submit_tag 'Refresh', :id => 'ratings_submit'
 
 %h2 All Movies
